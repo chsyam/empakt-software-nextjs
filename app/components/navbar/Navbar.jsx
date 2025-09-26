@@ -1,12 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Navbar.module.css";
-import LinkedIn from "../svgs/LinkedIn";
 import Link from "next/link";
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import Sidebar from "./Sidebar";
 
 export default function Navbar() {
+	const [toggleDropdown, setToggleDropdown] = useState("");
+	const [open, setOpen] = useState(false);
+
+	const toggleDrawer = (newOpen) => () => {
+		setOpen(newOpen);
+	};
+
+	const handleMouseEnter = (li_label) => {
+		setToggleDropdown(li_label);
+	};
+
 	return (
-		<div className={styles.footer_block}>
-			<div className={styles.footer}>
+		<div className={styles.navbar_block}>
+			<div className={styles.navbar}>
 				<div className={styles.block}>
 					<Image
 						src="/images/logo.jpg"
@@ -16,66 +31,81 @@ export default function Navbar() {
 						className="h-[75px] w-[200px]"
 						fetchPriority="high"
 					/>
-					<div className="text-xl pt-[20px] pb-[2px] font-semibold">
-						Follow us:
+				</div>
+				<div className={styles.navigation_menu}>
+					<div
+						className={styles.menu_item}
+						onMouseEnter={() => handleMouseEnter("home")}
+						onMouseLeave={() => handleMouseEnter("")}
+					>
+						<Link href="/">Home</Link>
 					</div>
-					<div className="w-min">
-						<LinkedIn height={40} width={40} />
+					<div
+						className={styles.menu_item}
+						onMouseEnter={() => handleMouseEnter("about-us")}
+						onMouseLeave={() => handleMouseEnter("")}
+					>
+						<Link href="/about-us">About Us</Link>
+						{toggleDropdown == "about-us" && (
+							<ul className={styles.navbar_dropdown}>
+								<li>
+									<Link href="#">Our Story</Link>
+								</li>
+								<li>
+									<Link href="#">The Empakt Software Difference</Link>
+								</li>
+							</ul>
+						)}
+					</div>
+					<div
+						className={styles.menu_item}
+						onMouseEnter={() => handleMouseEnter("employers")}
+						onMouseLeave={() => handleMouseEnter("")}
+					>
+						<Link href="/">Employers</Link>
+						{toggleDropdown == "employers" && (
+							<ul className={styles.navbar_dropdown}>
+								<li>
+									<Link href="#">Contract Staffing</Link>
+								</li>
+								<li>
+									<Link href="#">Permenent Staffing</Link>
+								</li>
+								<li>
+									<Link href="#">Off-Shore Staffing</Link>
+								</li>
+								<li>
+									<Link href="#">Near-Shore Staffing</Link>
+								</li>
+							</ul>
+						)}
+					</div>
+					<div
+						className={styles.menu_item}
+						onMouseEnter={() => handleMouseEnter("job-seekers")}
+						onMouseLeave={() => handleMouseEnter("")}
+					>
+						<Link href="/">Job Seekers</Link>
+						{toggleDropdown == "job-seekers" && (
+							<ul className={styles.navbar_dropdown}>
+								<li>
+									<Link href="#">Careers</Link>
+								</li>
+							</ul>
+						)}
+					</div>
+					<div
+						className={styles.menu_item}
+						onMouseEnter={() => handleMouseEnter("contact-us")}
+						onMouseLeave={() => handleMouseEnter("")}
+					>
+						<Link href="/">Contact Us</Link>
 					</div>
 				</div>
-				<div className={styles.block}>
-					<ul>
-						<li className={styles.block_title}>About Us</li>
-						<li>
-							<Link href="#">Our Story</Link>
-						</li>
-						<li>
-							<Link href="#">The Empakt Software Difference</Link>
-						</li>
-					</ul>
+				<div className={styles.sidebar_block} onClick={toggleDrawer(true)}>
+					<FaBars size={32} />
 				</div>
-				<div className={styles.block}>
-					<ul>
-						<li className={styles.block_title}>Employers</li>
-						<li>
-							<Link href="#">The Empakt Software Advantage</Link>
-						</li>
-						<li>
-							<Link href="#">How it Works</Link>
-						</li>
-						<li>
-							<Link href="#">Specialisations</Link>
-						</li>
-						<li>
-							<Link href="#">HR Solutions</Link>
-						</li>
-						<li>
-							<Link href="#">Register a Job Vacancy</Link>
-						</li>
-					</ul>
-				</div>
-				<div className={styles.block}>
-					<ul>
-						<li className={styles.block_title}>Job Seekers</li>
-						<li>
-							<Link href="#">The Empakt Software Advantage</Link>
-						</li>
-						<li>
-							<Link href="#">How it Works</Link>
-						</li>
-						<li>
-							<Link href="#">Browse Jobs</Link>
-						</li>
-						<li>
-							<Link href="#">Refer a Friend</Link>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div className={styles.copyright}>
-				<div className={styles.copyright_content}>
-					© Copyright 2025 Empakt Software LLC, All Rights Reserved.
-				</div>
+				<Sidebar open={open} toggleDrawer={toggleDrawer} />
 			</div>
 		</div>
 	);
