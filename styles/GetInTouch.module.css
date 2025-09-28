@@ -12,7 +12,7 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 10px;
-	margin: 50px auto;
+	margin: 100px auto;
 }
 
 .contact_block {
@@ -94,6 +94,7 @@
 @media (max-width: 725px) {
 	.getInTouch_container {
 		flex-direction: column;
+		margin: 50px auto;
 	}
 
 	.contact_block {
