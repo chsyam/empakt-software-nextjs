@@ -2,6 +2,9 @@
 	background-color: #001233;
 	border-top: 1px solid #fff;
 	color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 }
 
 .navbar {
@@ -82,7 +85,4 @@
 	.sidebar_block {
 		display: block;
 	}
-}
-
-@media (min-width: 700px) {
 }

@@ -49,10 +49,10 @@ export default function Navbar() {
 						{toggleDropdown == "about-us" && (
 							<ul className={styles.navbar_dropdown}>
 								<li>
-									<Link href="#">Our Story</Link>
+									<Link href="/our-story">Our Story</Link>
 								</li>
 								<li>
-									<Link href="#">The Empakt Software Difference</Link>
+									<Link href="/about-us">The Empakt Software Difference</Link>
 								</li>
 							</ul>
 						)}
@@ -62,20 +62,28 @@ export default function Navbar() {
 						onMouseEnter={() => handleMouseEnter("employers")}
 						onMouseLeave={() => handleMouseEnter("")}
 					>
-						<Link href="/">Employers</Link>
+						<Link href="/employers">Employers</Link>
 						{toggleDropdown == "employers" && (
 							<ul className={styles.navbar_dropdown}>
 								<li>
-									<Link href="#">Contract Staffing</Link>
+									<Link href="/employers/contract-staffing">
+										Contract Staffing
+									</Link>
 								</li>
 								<li>
-									<Link href="#">Permenent Staffing</Link>
+									<Link href="/employers/permenent-staffing">
+										Permenent Staffing
+									</Link>
 								</li>
 								<li>
-									<Link href="#">Off-Shore Staffing</Link>
+									<Link href="/employers/offshore-staffing">
+										Off-Shore Staffing
+									</Link>
 								</li>
 								<li>
-									<Link href="#">Near-Shore Staffing</Link>
+									<Link href="/employers/nearshore-staffing">
+										Near-Shore Staffing
+									</Link>
 								</li>
 							</ul>
 						)}
@@ -85,11 +93,11 @@ export default function Navbar() {
 						onMouseEnter={() => handleMouseEnter("job-seekers")}
 						onMouseLeave={() => handleMouseEnter("")}
 					>
-						<Link href="/">Job Seekers</Link>
+						<Link href="/job-seekers">Job Seekers</Link>
 						{toggleDropdown == "job-seekers" && (
 							<ul className={styles.navbar_dropdown}>
 								<li>
-									<Link href="#">Careers</Link>
+									<Link href="/careers">Careers</Link>
 								</li>
 							</ul>
 						)}
@@ -99,7 +107,7 @@ export default function Navbar() {
 						onMouseEnter={() => handleMouseEnter("contact-us")}
 						onMouseLeave={() => handleMouseEnter("")}
 					>
-						<Link href="/">Contact Us</Link>
+						<Link href="/contact-us">Contact Us</Link>
 					</div>
 				</div>
 				<div className={styles.sidebar_block} onClick={toggleDrawer(true)}>

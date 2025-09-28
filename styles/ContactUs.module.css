@@ -1,0 +1,9 @@
+.container {
+	background-color: #e6eefe;
+}
+
+.pageContainer {
+	max-width: 1400px;
+	margin: auto;
+	padding: 5px 10px;
+}

@@ -1,0 +1,64 @@
+.container {
+	background-color: #fff;
+}
+
+.pageContainer {
+	max-width: 1400px;
+	margin: auto;
+	padding: 5px 10px;
+}
+
+.addressBlock_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin: 50px auto;
+}
+
+.addressBlock_container iframe,
+.addressDetails {
+	flex: 1;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.addressDetails .address_metadata p {
+	font-size: 22px;
+	font-weight: 500;
+	color: #2e2e2e;
+}
+
+.addressDetails .address_metadata h1 {
+	font-size: 26px;
+	margin: 5px 0;
+	font-weight: 600;
+	color: #001233;
+}
+
+.address_block {
+	margin: 20px 0 0 0;
+}
+
+.address_block h3 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #001233;
+}
+
+.address_block p {
+	font-size: 18px;
+	color: #424242;
+	font-weight: 500;
+}
+
+@media (max-width: 725px) {
+	.addressBlock_container {
+		flex-direction: column;
+	}
+
+	.addressDetails {
+		text-align: left;
+	}
+}

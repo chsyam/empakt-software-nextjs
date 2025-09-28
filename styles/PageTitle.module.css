@@ -1,0 +1,15 @@
+.container {
+	background-color: #001233;
+}
+
+.pageContainer {
+	max-width: 1400px;
+	margin: auto;
+	padding: 5px 10px;
+}
+
+.title {
+	color: #00ffff;
+	font-size: 48px;
+	text-align: center;
+}

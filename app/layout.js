@@ -2,6 +2,7 @@ import { Karla } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import SubscribeNewsLetter from "./components/subscribe/SubscribeNewsLetter";
 
 const karla = Karla({
 	subsets: ["latin"],
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={karla.className} suppressHydrationWarning>
 				<Navbar />
-				{children}
+				<div className="pt-[97px]">{children}</div>
+				<SubscribeNewsLetter />
 				<Footer />
 			</body>
 		</html>

@@ -1,0 +1,9 @@
+.react-tel-input .form-control {
+	@apply w-full h-11 rounded-md border border-gray-400 px-4 text-base;
+	padding-left: 48px !important;
+	font-family: inherit;
+}
+
+.react-tel-input .flag-dropdown {
+	@apply border-none bg-transparent px-3;
+}

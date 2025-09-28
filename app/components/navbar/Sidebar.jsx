@@ -74,7 +74,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/empakt-software-difference">
+								<Link href="/about-us/empakt-software-difference">
 									The Empakt Software Difference
 								</Link>
 							</ListItemText>
@@ -106,7 +106,9 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/contract-staffing">Contract Staffing</Link>
+								<Link href="/employers/contract-staffing">
+									Contract Staffing
+								</Link>
 							</ListItemText>
 						</ListItemButton>
 
@@ -115,7 +117,9 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/permenent-staffing">Permenent Staffing</Link>
+								<Link href="/employers/permenent-staffing">
+									Permenent Staffing
+								</Link>
 							</ListItemText>
 						</ListItemButton>
 
@@ -124,7 +128,9 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/nearshore-staffing">Near-Shore Staffing</Link>
+								<Link href="/employers/nearshore-staffing">
+									Near-Shore Staffing
+								</Link>
 							</ListItemText>
 						</ListItemButton>
 
@@ -133,7 +139,9 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/offshore-staffing">Off-Shore Staffing</Link>
+								<Link href="/employers/offshore-staffing">
+									Off-Shore Staffing
+								</Link>
 							</ListItemText>
 						</ListItemButton>
 					</List>
