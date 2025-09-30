@@ -28,8 +28,9 @@ export default function Navbar() {
 						alt={`Logo`}
 						width={100}
 						height={100}
-						className="h-[75px] w-[200px]"
+						className="h-[75px] w-[200px] cursor-pointer"
 						fetchPriority="high"
+						onClick={() => (window.location.href = "/")}
 					/>
 				</div>
 				<div className={styles.navigation_menu}>

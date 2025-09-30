@@ -33,16 +33,16 @@
 	font-weight: 600;
 }
 
-.block li:hover {
-	color: #ffd700;
-}
-
 .block li:nth-child(1) {
 	font-size: 22px;
 	color: #fff;
 	font-weight: 600;
 	border-bottom: 2px solid #fff;
 	cursor: auto;
+}
+
+.block li:hover {
+	color: #ffd700;
 }
 
 .copyright {

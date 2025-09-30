@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import LinkedIn from "../svgs/LinkedIn";
 import styles from "./Footer.module.css";
@@ -13,8 +15,9 @@ export default function Footer() {
 						alt={`Logo`}
 						width={100}
 						height={100}
-						className="h-[75px] w-[200px]"
+						className="h-[75px] w-[200px] cursor-pointer"
 						fetchPriority="high"
+						onClick={() => (window.location.href = "/")}
 					/>
 					<div className="text-xl pt-[20px] pb-[2px] font-semibold">
 						Follow us:
@@ -25,18 +28,22 @@ export default function Footer() {
 				</div>
 				<div className={styles.block}>
 					<ul>
-						<li className={styles.block_title}>About Us</li>
-						<li>
-							<Link href="#">Our Story</Link>
+						<li className={styles.block_title}>
+							<Link href="/about-us">About Us</Link>
 						</li>
 						<li>
-							<Link href="#">The Empakt Software Difference</Link>
+							<Link href="/our-story">Our Story</Link>
+						</li>
+						<li>
+							<Link href="/about-us">The Empakt Software Difference</Link>
 						</li>
 					</ul>
 				</div>
 				<div className={styles.block}>
 					<ul>
-						<li className={styles.block_title}>Employers</li>
+						<li className={styles.block_title}>
+							<Link href="/employers">Employers</Link>
+						</li>
 						<li>
 							<Link href="#">The Empakt Software Advantage</Link>
 						</li>
@@ -56,7 +63,9 @@ export default function Footer() {
 				</div>
 				<div className={styles.block}>
 					<ul>
-						<li className={styles.block_title}>Job Seekers</li>
+						<li className={styles.block_title}>
+							<Link href="/job-seekers">Job Seekers</Link>
+						</li>
 						<li>
 							<Link href="#">The Empakt Software Advantage</Link>
 						</li>
@@ -67,7 +76,7 @@ export default function Footer() {
 							<Link href="#">Browse Jobs</Link>
 						</li>
 						<li>
-							<Link href="#">Refer a Friend</Link>
+							<Link href="/referafriend">Refer a Friend</Link>
 						</li>
 					</ul>
 				</div>
