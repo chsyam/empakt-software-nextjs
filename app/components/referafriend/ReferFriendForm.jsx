@@ -79,7 +79,7 @@ export default function ReferFriendForm() {
 							</div>
 						</div>
 						<div className={styles.form_group}>
-							<p className="text-sm mt-1 pl-2 text-[#001233] font-medium">
+							<p className="text-sm mt-1 pl-2 text-red-600 font-medium">
 								Please upload Resume in .pdf format
 							</p>
 							<input type="file" className={styles.fileInput} />
