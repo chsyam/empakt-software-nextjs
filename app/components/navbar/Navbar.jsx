@@ -67,22 +67,22 @@ export default function Navbar() {
 						{toggleDropdown == "employers" && (
 							<ul className={styles.navbar_dropdown}>
 								<li>
-									<Link href="/employers/contract-staffing">
+									<Link href="/capabilities/contract-staffing">
 										Contract Staffing
 									</Link>
 								</li>
 								<li>
-									<Link href="/employers/permenent-staffing">
+									<Link href="/capabilities/permenent-staffing">
 										Permenent Staffing
 									</Link>
 								</li>
 								<li>
-									<Link href="/employers/offshore-staffing">
+									<Link href="/capabilities/offshore-staffing">
 										Off-Shore Staffing
 									</Link>
 								</li>
 								<li>
-									<Link href="/employers/nearshore-staffing">
+									<Link href="/capabilities/nearshore-staffing">
 										Near-Shore Staffing
 									</Link>
 								</li>

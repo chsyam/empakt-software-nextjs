@@ -106,7 +106,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/employers/contract-staffing">
+								<Link href="/capabilities/contract-staffing">
 									Contract Staffing
 								</Link>
 							</ListItemText>
@@ -117,7 +117,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/employers/permenent-staffing">
+								<Link href="/capabilities/permenent-staffing">
 									Permenent Staffing
 								</Link>
 							</ListItemText>
@@ -128,7 +128,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/employers/nearshore-staffing">
+								<Link href="/capabilities/nearshore-staffing">
 									Near-Shore Staffing
 								</Link>
 							</ListItemText>
@@ -139,7 +139,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 								<BsArrowReturnRight strokeWidth={1.15} />
 							</ListItemIcon>
 							<ListItemText>
-								<Link href="/employers/offshore-staffing">
+								<Link href="/capabilities/offshore-staffing">
 									Off-Shore Staffing
 								</Link>
 							</ListItemText>
