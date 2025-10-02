@@ -46,7 +46,7 @@ export default function GetInTouch() {
 								<br />
 								<input placeholder="Your Email" type="email" required />
 								<br />
-								<PhoneNumberInput />
+								<PhoneNumberInput color="#c7c7c7" />
 								<textarea placeholder="How can we help?" />
 							</div>
 							<button className={styles.submitButton}>Submit</button>

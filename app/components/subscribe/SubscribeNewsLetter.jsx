@@ -67,7 +67,7 @@ export default function SubscribeNewsLetter() {
 					/>
 					<button className={styles.signUpButton}>
 						{submitStatus ? (
-							<div className="h-7 w-7 rounded-full animate-spin border-3 border-[#000000] border-t-transparent mx-auto" />
+							<div className="h-7 w-7 rounded-full animate-spin border-3 border-[#fff] border-t-transparent mx-auto" />
 						) : (
 							"Signup"
 						)}

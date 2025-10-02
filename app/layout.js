@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={karla.className} suppressHydrationWarning>
 				<Navbar />
-				<div className="pt-[97px]">{children}</div>
+				<div className="pt-[86px]">{children}</div>
 				<SubscribeNewsLetter />
 				<Footer />
 			</body>

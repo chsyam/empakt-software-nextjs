@@ -24,7 +24,6 @@ export default function ReferFriendForm() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.pageContainer}>
-				{/* <h1 className={styles.form_title}>Bring your Buddy</h1> */}
 				<div className={styles.referFriendContainer}>
 					<form onSubmit={handleSubmit} className={styles.form_block}>
 						<p className="text-sm my-1 pl-2 text-red-600 font-medium">
@@ -33,7 +32,7 @@ export default function ReferFriendForm() {
 						</p>
 						<div className={styles.form_group}>
 							<div className={styles.form_element}>
-								<input placeholder="Your First Name *" type="text" required />
+								<input placeholder="Your First Name" type="text" required />
 							</div>
 							<div className={styles.form_element}>
 								<input placeholder="Your Last Name" type="text" required />
@@ -48,25 +47,22 @@ export default function ReferFriendForm() {
 							</div>
 						</div>
 						<div className="text-xl font-medium my-3">
-							Please enter your friend's details
+							Please enter your buddy's details
 						</div>
 						<div className={styles.form_group}>
 							<div className={styles.form_element}>
-								<input placeholder="Friend's First Name" type="text" required />
+								<input placeholder="Buddy's First Name" type="text" required />
 							</div>
 							<div className={styles.form_element}>
-								<input placeholder="Friend's Last Name" type="text" required />
+								<input placeholder="Buddy's Last Name" type="text" required />
 							</div>
 						</div>
 						<div className={styles.form_group}>
 							<div className={styles.form_element}>
-								<input placeholder="Friend's Email" type="email" required />
+								<input placeholder="Buddy's Email" type="email" required />
 							</div>
 							<div className={styles.form_element}>
-								<PhoneNumberInput
-									placeholder="Friend's Phone"
-									color="#c7c7c7"
-								/>
+								<PhoneNumberInput placeholder="Buddy's Phone" color="#c7c7c7" />
 							</div>
 						</div>
 						<div className={styles.form_group}>
@@ -80,7 +76,7 @@ export default function ReferFriendForm() {
 						</div>
 						<div className={styles.form_group}>
 							<p className="text-sm mt-1 pl-2 text-red-600 font-medium">
-								Please upload Resume in .pdf format
+								* Please upload Resume in .pdf format
 							</p>
 							<input type="file" className={styles.fileInput} />
 						</div>
@@ -98,7 +94,7 @@ export default function ReferFriendForm() {
 							alt="Bring your Buddy"
 							width={600}
 							height={600}
-							className="aspect-square"
+							className="aspect-auto"
 						/>
 					</div>
 				</div>

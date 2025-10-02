@@ -15,18 +15,6 @@ export default function AddressBlock() {
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
 					></iframe>
-					{/* <div className={styles.addressDetails}>
-						<div className={styles.address_metadata}>
-							<p>Our Location</p>
-							<h1>Connecting Near and Far</h1>
-						</div>
-						<div className={styles.address_block}>
-							<h3>Headquarters</h3>
-							<p>Birmingham,</p>
-							<p>Alabama,</p>
-							<p>United States of America</p>
-						</div>
-					</div> */}
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,10 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import "./../../../styles/phone-input.css";
 
-export default function PhoneNumberInput({ placeholder, color = "#001233" }) {
+export default function PhoneNumberInput({
+	placeholder = "Your Mobile",
+	color = "#001233",
+}) {
 	const [phone, setPhone] = useState("");
 
 	return (
@@ -19,8 +22,8 @@ export default function PhoneNumberInput({ placeholder, color = "#001233" }) {
 				borderRadius: "0.5rem",
 				border: `2px solid ${color}`,
 				paddingLeft: "48px",
-				fontSize: "1rem",
-				fontFamily: "inherit",
+				fontSize: "18px",
+				fontFamily: "karla",
 			}}
 			containerStyle={{
 				width: "100%",

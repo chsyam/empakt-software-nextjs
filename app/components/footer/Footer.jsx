@@ -45,10 +45,12 @@ export default function Footer() {
 							<Link href="/employers">Employers</Link>
 						</li>
 						<li>
-							<Link href="#">The Empakt Software Advantage</Link>
+							<Link href="/employers#advantages">
+								The Empakt Software Advantage
+							</Link>
 						</li>
 						<li>
-							<Link href="#">How it Works</Link>
+							<Link href="/employers#how-does-it-work">How it Works</Link>
 						</li>
 						<li>
 							<Link href="#">Specialisations</Link>
@@ -57,7 +59,9 @@ export default function Footer() {
 							<Link href="#">HR Solutions</Link>
 						</li>
 						<li>
-							<Link href="#">Register a Job Vacancy</Link>
+							<Link href="/employers#register-job-vacancy">
+								Register a Job Vacancy
+							</Link>
 						</li>
 					</ul>
 				</div>

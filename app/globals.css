@@ -7,6 +7,12 @@
 #FFD700
 */
 
-/* body {
-	max-width: 1400px;
-} */
+html {
+	scroll-behavior: auto;
+}
+
+#register-job-vacancy,
+#advantages,
+#how-does-it-work {
+	scroll-margin-top: 90px;
+}
