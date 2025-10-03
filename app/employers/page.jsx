@@ -7,6 +7,7 @@ import EmpaktSoftwareAdvantages from "../components/employers/EmpaktSoftwareAdva
 import PromotionalInfo from "../components/employers/PromotionalInfo";
 import HowDoesItWorks from "../components/employers/HowDoesItWorks";
 import HRSolutions from "../components/employers/HRSolutions";
+import Specializations from "../components/employers/Specializations";
 
 export default function Employers() {
 	return (
@@ -16,6 +17,7 @@ export default function Employers() {
 			<EmpaktSoftwareAdvantages />
 			<HowDoesItWorks />
 			<HRSolutions />
+			<Specializations />
 			<RegisterJobVacancy />
 		</div>
 	);
