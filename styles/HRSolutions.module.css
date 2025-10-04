@@ -45,14 +45,14 @@
 
 .solution_description {
 	color: #e6eefe;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .gridContainer {
 	display: grid;
-	grid-template-columns: 1fr 1fr; /* 2 columns */
-	grid-template-rows: auto auto; /* 2 rows */
-	gap: 20px; /* optional spacing */
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 20px;
 	margin: 25px auto 50px auto;
 }
 
@@ -75,4 +75,10 @@
 .item2,
 .item4 {
 	justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+	.gridContainer {
+		grid-template-columns: 1fr;
+	}
 }

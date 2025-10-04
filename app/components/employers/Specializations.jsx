@@ -2,6 +2,7 @@
 
 import styles from "./../../../styles/Specializations.module.css";
 import React from "react";
+import Image from "next/image";
 
 export default function Specializations() {
 	return (
@@ -23,6 +24,108 @@ export default function Specializations() {
 							Do you want your business to touch a new height of success with
 							the right workforce? Have a look at our proven record from this
 							vast list of industry specializarion below:
+						</div>
+						<div className={styles.grid_container}>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/information_technology.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Information Technology
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/banking-financial-services.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Banking & Financial Services
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/pharmaceuticals-healthcare.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Pharmaceuticals & Healthcare
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/telecom.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Telecom
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/automobile.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Automobile
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/manufacturing.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Manufacturing
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/engineering.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Engineering
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/construction.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Construction
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/semiconductor.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								Semiconductor
+							</div>
+							<div className={styles.specialization_card}>
+								<Image
+									src={"/images/specializations/e-commerce.png"}
+									alt="Information Technology"
+									width={35}
+									height={35}
+									className="mx-[10px]"
+								/>
+								E-commerce
+							</div>
 						</div>
 					</div>
 				</div>

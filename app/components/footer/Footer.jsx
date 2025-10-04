@@ -53,10 +53,10 @@ export default function Footer() {
 							<Link href="/employers#how-does-it-work">How it Works</Link>
 						</li>
 						<li>
-							<Link href="#">Specialisations</Link>
+							<Link href="/employers#specializations">Specialisations</Link>
 						</li>
 						<li>
-							<Link href="#">HR Solutions</Link>
+							<Link href="/employers#hr-solutions">HR Solutions</Link>
 						</li>
 						<li>
 							<Link href="/employers#register-job-vacancy">

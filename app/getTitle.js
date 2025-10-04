@@ -1,5 +1,8 @@
 export function getTitle(pathname) {
 	switch (pathname) {
+		case "/employers":
+			return "Best Global Recruitment & Staffing Company";
+
 		case "/contact-us":
 			return "Contact Us | Empakt Software Solution";
 
